@@ -57,6 +57,11 @@ public class NetworkGameBootstrap : MonoBehaviour
         if (networkManager.IsListening)
             return true;
 
+        // NGO checks PlayerPrefab with ?. during host approval, which bypasses Unity's
+        // null check. Normalize an empty Unity reference for manual player spawning.
+        if (networkManager.NetworkConfig.PlayerPrefab == null)
+            networkManager.NetworkConfig.PlayerPrefab = null;
+
         unityTransport.SetConnectionData("0.0.0.0", serverPort, "0.0.0.0");
 
         bool success = networkManager.StartHost();
