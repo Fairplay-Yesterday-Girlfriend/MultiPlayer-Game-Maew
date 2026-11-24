@@ -763,7 +763,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Blocks.Gameplay.Core::Blocks.Gameplay.Core.VisualsAddon
   playerAnimator: {fileID: 4397250744277509611}
   componentController: {fileID: 7666903440408712975}
-  overrideMaterialsAndColors: 1
+  overrideMaterialsAndColors: 0
   targetRenderer: {fileID: -1526964690268444965, guid: 818869414cb277140a866d541488d88f, type: 3}
   materialSets:
   - name: "\u0E40\u0E40\u0E21\u0E27"
@@ -1043,10 +1043,13 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   targetRenderer: {fileID: 2026255206485606787}
   materialIndex: 0
-  skinMaterials:
-  - {fileID: 2100000, guid: 7a25688d370e9fe49b458ddcae93fdfd, type: 2}
-  - {fileID: 2100000, guid: 49236bcd2d8abb643a84777a11d69479, type: 2}
-  - {fileID: 2100000, guid: 18f38cb4c7e67234ca5d72a4a08bdcda, type: 2}
+  skins:
+  - model: {fileID: 919132149155446097, guid: c4c2eff821f04b19aa75b29cb5405985, type: 3}
+    material: {fileID: 2100000, guid: 7a25688d370e9fe49b458ddcae93fdfd, type: 2}
+  - model: {fileID: 919132149155446097, guid: 818869414cb277140a866d541488d88f, type: 3}
+    material: {fileID: 2100000, guid: 49236bcd2d8abb643a84777a11d69479, type: 2}
+  - model: {fileID: 919132149155446097, guid: a3cda566d0ce4fbebfaacc561ee92b80, type: 3}
+    material: {fileID: 2100000, guid: 18f38cb4c7e67234ca5d72a4a08bdcda, type: 2}
 --- !u!1 &4757243973968613374
 GameObject:
   m_ObjectHideFlags: 0
